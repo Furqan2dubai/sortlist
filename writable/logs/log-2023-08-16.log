@@ -1,0 +1,292 @@
+CRITICAL - 2023-08-16 04:20:26 --> Undefined property: stdClass::$user_name
+in APPPATH\Views\admin\page\page_list.php on line 164.
+ 1 APPPATH\Views\admin\page\page_list.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_name', 'C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php', 164)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/page/page_list', [], true)
+ 5 APPPATH\Controllers\Page.php(13): view('admin/page/page_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 04:23:45 --> Undefined property: stdClass::$user_status
+in APPPATH\Views\admin\page\page_list.php on line 171.
+ 1 APPPATH\Views\admin\page\page_list.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_status', 'C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php', 171)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/page/page_list', [], true)
+ 5 APPPATH\Controllers\Page.php(13): view('admin/page/page_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 04:24:45 --> Undefined property: stdClass::$user_status
+in APPPATH\Views\admin\page\page_list.php on line 171.
+ 1 APPPATH\Views\admin\page\page_list.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_status', 'C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php', 171)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/page/page_list', [], true)
+ 5 APPPATH\Controllers\Page.php(13): view('admin/page/page_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 04:25:55 --> mysqli_sql_exception: Unknown column 'page_id' in 'where clause' in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from u...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 04:25:55 --> Unknown column 'page_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from users where page_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from users where page_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from users where page_id = 1')
+ 4 APPPATH\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from users where page_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 04:27:56 --> mysqli_sql_exception: Unknown column 'page_id' in 'where clause' in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from u...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 04:27:56 --> Unknown column 'page_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from users where page_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from users where page_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from users where page_id = 1')
+ 4 APPPATH\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from users where page_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 04:56:52 --> Undefined variable $title
+in APPPATH\Views\admin\page\page_list.php on line 138.
+ 1 APPPATH\Views\admin\page\page_list.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\page\\page_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/page/page_list', [], true)
+ 5 APPPATH\Controllers\Page.php(13): view('admin/page/page_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 04:57:05 --> mysqli_sql_exception: Unknown column 'page_id' in 'where clause' in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from u...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 04:57:05 --> Unknown column 'page_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from users where page_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from users where page_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from users where page_id = 1')
+ 4 APPPATH\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from users where page_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 04:57:57 --> mysqli_sql_exception: Unknown column 'page_id' in 'where clause' in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from u...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 04:57:57 --> Unknown column 'page_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from users where page_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from users where page_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from users where page_id = 1')
+ 4 APPPATH\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from users where page_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 06:50:58 --> mysqli_sql_exception: Unknown column 'page_id' in 'where clause' in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from u...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 06:50:58 --> Unknown column 'page_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from users where page_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from users where page_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from users where page_id = 1')
+ 4 APPPATH\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from users where page_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 06:51:18 --> mysqli_sql_exception: Unknown column 'page_id' in 'where clause' in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from u...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from u...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from u...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 06:51:18 --> Unknown column 'page_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from users where page_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from users where page_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from users where page_id = 1')
+ 4 APPPATH\Controllers\Page.php(20): CodeIgniter\Database\BaseConnection->query('select * from users where page_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:13:34 --> Attempt to read property "user_name" on array
+in APPPATH\Views\admin\user\user_edit.php on line 147.
+ 1 APPPATH\Views\admin\user\user_edit.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "user_name" on array', 'C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\user\\user_edit.php', 147)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sortlist\\app\\Views\\admin\\user\\user_edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/user/user_edit', [], true)
+ 5 APPPATH\Controllers\User.php(21): view('admin/user/user_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:39:06 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:41:27 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:42:42 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:44:34 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:45:48 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:45:50 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:47:18 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 09:48:12 --> Too few arguments to function App\Controllers\User::edit(), 0 passed in C:\xampp\htdocs\sortlist\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 09:56:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1 in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('update users se...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('update users se...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('update users se...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\User.php(26): CodeIgniter\Database\BaseConnection->query('update users se...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\User->edit('1 2')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 09:56:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 4 APPPATH\Controllers\User.php(26): CodeIgniter\Database\BaseConnection->query('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit('1 2')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 09:56:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1 in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('update users se...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('update users se...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('update users se...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\User.php(26): CodeIgniter\Database\BaseConnection->query('update users se...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\User->edit('1 2')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 09:56:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 4 APPPATH\Controllers\User.php(26): CodeIgniter\Database\BaseConnection->query('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit('1 2')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-16 09:56:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1 in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('update users se...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('update users se...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('update users se...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\User.php(26): CodeIgniter\Database\BaseConnection->query('update users se...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\User->edit('1 2')
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-16 09:56:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 4 APPPATH\Controllers\User.php(26): CodeIgniter\Database\BaseConnection->query('update users set user_name=\'Chiang\', user_role=\'editor\', user_status=\'inactive\' where user_id=1 2')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->edit('1 2')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
