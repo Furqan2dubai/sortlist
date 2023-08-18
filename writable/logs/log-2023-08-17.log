@@ -1,0 +1,63 @@
+ERROR - 2023-08-17 06:45:23 --> mysqli_sql_exception: Table 'sortlist.pages' doesn't exist in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from p...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(11): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->index()
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 06:45:23 --> Table 'sortlist.pages' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from pages', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from pages')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from pages')
+ 4 APPPATH\Controllers\Page.php(11): CodeIgniter\Database\BaseConnection->query('select * from pages')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 07:53:27 --> mysqli_sql_exception: Table 'sortlist.pages' doesn't exist in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from p...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(11): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->index()
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 07:53:27 --> Table 'sortlist.pages' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from pages', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from pages')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from pages')
+ 4 APPPATH\Controllers\Page.php(11): CodeIgniter\Database\BaseConnection->query('select * from pages')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 09:59:44 --> mysqli_sql_exception: Table 'sortlist.pages' doesn't exist in C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sortlist\system\Database\MySQLi\Connection.php(295): mysqli->query('select * from p...', 0)
+#1 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\xampp\htdocs\sortlist\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\xampp\htdocs\sortlist\app\Controllers\Page.php(11): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(932): App\Controllers\Page->index()
+#5 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#6 C:\xampp\htdocs\sortlist\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sortlist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 09:59:44 --> Table 'sortlist.pages' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select * from pages', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from pages')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from pages')
+ 4 APPPATH\Controllers\Page.php(11): CodeIgniter\Database\BaseConnection->query('select * from pages')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
