@@ -1,11 +1,11 @@
-<?php
+<?php 
 
 namespace App\Controllers;
 
 class User extends BaseController
 {
     public function index()
-    { 
+    {  
         $db = \Config\Database::connect();  
         $data["title"] = "User List";
         $data["user_data"] =  $db->query('select * from users')->getResult() ;
